@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+.header {
+  background: url("../img/bg.jpg  ") no-repeat center / cover;
+  color: #fcfcfc;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding-top: 47px;
+}
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.menu-item {
+  margin-right: 30px;
+}
+.link {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.search {
+  margin-left: 43px;
+}
+.user {
+  margin-left: 30px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-title {
+  font-weight: 600;
+  font-size: 98px;
+  line-height: 145px;
+  margin-bottom: 20px;
+}
+.button-info {
+  max-width: 170px;
+  border: 2px solid #fcfcfc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 17px 43px;
+  margin-bottom: 204px;
+  cursor: pointer;
+}
+.map {
+  display: flex;
+  margin-top: 140px;
+}
+.map-container-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+}
+.map-container-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 50px;
+  max-width: 350px;
+}
+.map-city {
+  margin-top: 83px;
+  max-width: 698px;
+}
+.tours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 130px;
+}
+.tours-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+}
+.tours-cards {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+.tour-card {
+  position: relative;
+}
+.tour-card:not(:last-child) {
+  margin-right: 31px;
+}
+.grey {
+  display: none;
+}
+.card-grey {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 249, 250, 0) 0%,
+    rgba(249, 249, 250, 0.9) 100%
+  );
+}
+.card-info {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 290px;
+  margin: auto;
+  z-index: 9;
+}
+.like {
+  position: absolute;
+  top: 41px;
+  left: 295px;
+}
+.country {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 115%;
+}
+.tour {
+  margin-top: 125px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 115%;
+}
+.tour-info,
+.tour-level {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 115%;
+}
+.tour-info {
+  margin-bottom: 25px;
+}
+.meters,
+.days {
+  padding-right: 10px;
+  border-right: 1px solid #061b28;
+}
+.days,
+.cost {
+  padding-left: 5px;
+}
+.navigation {
+  margin-top: 40px;
+  margin-left: 90%;
+}
+.navigation-button:not(:last-child) {
+  margin-right: 25px;
+}
+.navigation-button {
+  cursor: pointer;
+}
+.section {
+  background: url("../img/bg-tour-table.jpg") no-repeat center top / cover;
+  height: 100%;
+}
+.tour-table {
+  color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tour-table-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+.tour-table-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  max-width: 243px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  max-width: 830px;
+}
+.table-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #a7aeb4;
+  text-align: center;
+}
+.table-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+}
+.tours-button {
+  border: 2px solid #fcfcfc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.table-names,
+.table-mountains {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+  border-bottom: 1px solid #45545e;
+  width: 830px;
+}
+.table-mountains {
+  margin-left: 12px;
+}
+.tours-button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 17px 33px;
+  cursor: pointer;
+}
+.section-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+}
+.blog-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+}
+.blog {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  grid-column-gap: 70px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin-bottom: 141px;
+}
+.news-label {
+  padding: 30px;
+  padding-right: 9px;
+  border-bottom: 1px solid #061b28;
+}
+.news-label:hover {
+  background-color: #061b28;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+.date {
+  font-size: 14px;
+  color: #626f77;
+  margin-bottom: 20px;
+}
+.label-info {
+  font-size: 18px;
+  line-height: 120%;
+}
+.news-information {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 683px;
+  margin-top: 35px;
+}
+.blog-img {
+  margin-bottom: 40px;
+}
+.info-label {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 140%;
+}
+.button-read {
+  margin-top: 30px;
+  padding: 20px 125px;
+  max-width: 400px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fcfcfc;
+  background-color: #ec5118;
+  cursor: pointer;
+}
+.section-help {
+  display: flex;
+  color: #fcfcfc;
+  max-height: 750px;
+}
+.help {
+  display: flex;
+  flex-direction: column;
+  background-color: #061b28;
+  max-width: 50%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 98px;
+  padding-right: 60px;
+}
+.help-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+  margin-bottom: 40px;
+}
+.help-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 5px;
+}
+.input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7e8386;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #45545e;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+.form-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  background-color: #ec5118;
+  width: 100%;
+  padding: 20px 222px;
+  margin-top: 45px;
+  cursor: pointer;
+}
+.ps {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 25px;
+}
+.img-section-help {
+  max-width: 50%;
+}
+.contacts {
+  padding-top: 133px;
+  padding-bottom: 140px;
+  display: flex;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.cont {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+  margin-bottom: 20px;
+}
+.cont-lbl {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.contact-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+}
+.social-link:not(:last-child) {
+  margin-right: 33px;
+}
+.social-link {
+  cursor: pointer;
+}
+.footer {
+  background-color: #061b28;
+  padding-top: 9px;
+  padding-bottom: 56px;
+  color: #fcfcfc;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.polite {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+.rights,
+.polite {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+}
+.label {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
